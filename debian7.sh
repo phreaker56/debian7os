@@ -6,7 +6,7 @@ sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 
 # install wget and curl
 apt-get update;apt-get -y install wget curl;
-apt-get install openvpn iptables openssl ca-certificates -y
+apt-get install openvpn
 
 # set time GMT +7
 ln -fs /usr/share/zoneinfo/America/Managua /etc/localtime
