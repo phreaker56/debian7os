@@ -15,10 +15,7 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 service ssh restart
 
 # install openvpn
-fun_instdep() {
 apt-get install openvpn iptables openssl ca-certificates -y
-}
-
 wget -O /etc/openvpn/openvpn.tar "https://raw.github.com/phreaker56/debian7os/master/openvpn-debian.tar"
 cd /etc/openvpn/
 tar xzf openvpn.tar
